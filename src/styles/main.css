@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+:root{
+	--bg_1: #95E1D3; 
+}
+
+body{
+	margin:0;
+	background: #EAFFD0;
+	font-family: 'Mukta', 'sans-serif';
+}
+
+p{
+	margin:0;
+}
+
+.App{
+	min-height:100vh;
+	display:flex;
+	flex-direction: column;
+	justify-content:space-between;
+}
+
+#header{
+	font-family: 'Poppins', 'sans-serif';
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--bg_1);
+}
+
+#footer{
+	font-family: 'Poppins', 'sans-serif';
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5vh;
+	padding: 0;
+	background: var(--bg_1);
+}
