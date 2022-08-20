@@ -12,7 +12,7 @@ function Content(){
 	return(
 		<div id='content'>
 			<ScoreBoard current={currentScore} best={bestScore}/>
-			<MainContainer setCurrent={setCurrent} setBest={setBest}/>
+			<MainContainer current={currentScore} best={bestScore} setCurrent={setCurrent} setBest={setBest}/>
 		</div>
 	)
 }
