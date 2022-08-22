@@ -1,13 +1,19 @@
 import React from 'react';
 import ScoreBoard from './main_contents/ScoreBoard'
 import MainContainer from './main_contents/MainContainer'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import '../styles/contents.css'
 
-function Content(){
+function Content(props){
 
 	const [currentScore, setCurrent] = useState(0);
 	const [bestScore, setBest] = useState(0);
+	const {setModal} = props;
+
+	useEffect(()=>{
+		if (currentScore===12)
+			setModal(true)
+	}, [currentScore, setModal]);
 
 	return(
 		<div id='content'>
