@@ -2,16 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 
 :root{
-	--bg_1: #95E1D3; 
+	--bg_1: #7A4495; 
 }
 
 body{
 	margin:0;
-	background: #EAFFD0;
+	background: #363333;
 	font-family: 'Mukta', 'sans-serif';
+	color: #FCE2DB
 }
 
 p{
+	margin:0;
+}
+
+h3{
 	margin:0;
 }
 
@@ -28,6 +33,7 @@ p{
 	justify-content: center;
 	align-items: center;
 	background: var(--bg_1);
+	color: #FCE2DB;
 }
 
 #footer{
@@ -35,7 +41,8 @@ p{
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 2.5vh;
+	font-size: 2.3vh;
 	padding: 0;
 	background: var(--bg_1);
+	color: #FCE2DB;
 }

@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 #content{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	min-height: 50vh;
 }
 
 #scoreboard{
 	display: flex;
-	gap: 10%;
+	gap: 30%;
+	border: 5px solid #FF8FB1;
+	border-radius: 5%;
+	padding: 1vh 4.2vh;
+	justify-content:center;
+	font-family: 'Ubuntu', 'sans-serif';
 }
+
+.score{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.underline{
+	text-decoration:underline;
+}
+
 
 #card-container{
 	display:flex;

@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import Card from './Card'
 import { v4 as uuidv4 } from 'uuid';
+import countryJson from './countryToCountryCode.json'
 
 function MainContainer(props){
 
-	const [countries, setCountries]  = useState(['al', 'ag', 'bi', 'fm', 'kn', 'vc', 'sc', 'sz', 'ls', 'mg', 'gl', 'dj']);
+	const [countries, setCountries]  = useState(Object.keys(countryJson));
 	const [checkingArray, setCheckArray] = useState([]);
 
 	const cardListener = (e, code) =>{
@@ -30,7 +31,7 @@ function MainContainer(props){
 		<div id='card-container'>
 			{
 			countries.map( (code) =>{
-				return (<Card cardListener={cardListener} title={code} code={code} key={uuidv4()}/>)
+				return (<Card cardListener={cardListener} title={countryJson[code]} code={code} key={uuidv4()}/>)
 			})
 			}
 		</div>
