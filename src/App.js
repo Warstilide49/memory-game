@@ -8,13 +8,14 @@ import './styles/main.css'
 function App() {
 
   const [modalOpen, setModal] = useState(false);
+  const [message, setMessage] = useState("");
 
   return (
     <div className="App">
       <Header/>
-      <Content setModal={setModal}/>
+      <Content setModal={setModal} setMessage={setMessage}/>
       <Footer/>
-      {modalOpen && <Modal setModal={setModal}/>}
+      {modalOpen && <Modal setModal={setModal} message={message}/>}
     </div>
   );
 }
